@@ -65,17 +65,18 @@
 </head>
 
 <body>
-  <h1> </h1>
+  <h1>hi im angel </h1>
 
-  <p>slast edit 9/7/25</p>
+  <p id="last-edit"></p>
   <span class="muted">any/all pronouns</span>
+
   <div class="section">
     <strong>stuff i’m doing:</strong>
     <ul>
       <li>photography</li>
-      <li>urbex</li>
+      <li>urbex </li>
       <li>thrifting</li>
-      <li>i use to code a lot </li>
+      <li>i use to code a lot too busy now</li>
     </ul>
   </div>
 
@@ -84,23 +85,17 @@
     <p>adhd. bpd. social and general anxiety. anorexia. body dysmorphia. dyslexia and dyscalculia.</p>
   </div>
 
-  </div>
-
-
-
   <div class="section">
     <strong>contact me:</strong><br />
     <a href="https://discord.com/users/808821370909753374">discord</a>
     <br />
   </div>
 
-  </div>
+  <footer></footer>
 
-  <footer>
-
-  </footer>
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <script>
+    // typewriter effect
     const target = document.querySelector("h1");
     target.innerHTML = '';
 
@@ -120,10 +115,16 @@
       .typeString("enjoy your stay")
       .pauseFor(2000)
       .start();
+
+    // date updater
+    const lastEdit = new Date(document.lastModified);
+    document.getElementById("last-edit").textContent =
+      "last updated " +
+      (lastEdit.getMonth() + 1) + "/" +
+      lastEdit.getDate() + "/" +
+      lastEdit.getFullYear();
   </script>
 
 </body>
 
-
 </html>
-
